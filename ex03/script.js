@@ -1,19 +1,11 @@
 // Condicionais - Switch
-// var nota = 2.5;
 
-// if (nota >= 7) {
-//     console.log('Você passou com a nota ' + nota + '.')
-// }
-// else {
-//     console.log('Você reprovou com a nota ' + nota + '.')
-// }
-
-var nota1 = 8;
+var nota1 = 2;
 var nota2 = 9;
 
 var media = (nota1 + nota2) / 2;
 
-var conceito = ""
+var conceito = "";
 
 if(media >= 8){
 
@@ -28,6 +20,23 @@ else{
     conceito = "Regular";
 }
 
+conceito = 'Mais ou menos'
 
-console.log(media)
-console.log(conceito)
+console.log(media);
+console.log(conceito);
+
+switch(conceito){
+
+    case "Ótimo":
+        console.log('Parabéns, você é um ótimo aluno.')
+        break;
+    case "Bom":
+        console.log('Você está quase perfeito.')
+        break;
+    case "Regular":
+        console.log('Estude mais um pouco.')
+        break;
+    default:
+        console.log('Houve algum erro')
+        break;
+}
