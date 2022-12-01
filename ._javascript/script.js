@@ -7,7 +7,25 @@ function media(n1, n2){
      
 }
 
+function passou(media){
+    // var resultado = "Reprovado"
+
+    // if(media > 7){
+    //     resultado = "Aprovado"
+    // }
+    if (media > 7){
+        return "Aprovado";
+    } else {
+        return "Reprovado";
+    }
+}
+
 for (var index in aluno){
 
-    console.log(aluno[index] + " - " + nota1[index] + " - " + nota2[index] + " - " + media(nota1[index], nota2[index]));
+    var notaA = nota1[index]
+    var notaB = nota2[index]
+
+    var m = media(nota1[index], nota2[index])
+
+    console.log(aluno[index] + " - " + nota1[index] + " - " + nota2[index] + " - " + m + " - " + passou(m));
 }
