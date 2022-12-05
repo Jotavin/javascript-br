@@ -1,4 +1,4 @@
-
+// Função
 
 function media(n1, n2){
     var nota1 = n1;
